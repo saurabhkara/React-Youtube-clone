@@ -30,13 +30,26 @@
     background: #ccc;
     width: 85%;
 }
+.subscribed-list{
+ padding: 10px 0;  
+}
 .subscribed-list h3{
   font-size: 13px;
-  margin: 20px 0;
+  margin: 10px 0;
   color:#5a5a5a
 }
 .subscribed-list img{
     width: 25px;
     border-radius: 50%;
     margin-right: 20px;
+}
+.small-sidebar{
+    width: 5%;
+}
+
+.small-sidebar p{
+    display: none;
+}
+.small-sidebar h3{
+    display: none;
 }

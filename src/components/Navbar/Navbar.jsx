@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Navbar.css";
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
@@ -7,11 +8,16 @@ import more_icon from "../../assets/more.png";
 import upload_icon from "../../assets/upload.png";
 import profile_icon from "../../assets/user_profile.jpg";
 
-export default function Navbar() {
+export default function Navbar({ setOpenSidebar }) {
   return (
     <nav className="flex-div">
       <div className="nav-left flex-div">
-        <img src={menu_icon} alt="menu icon" className="menu-icon" />
+        <img
+          src={menu_icon}
+          alt="menu icon"
+          className="menu-icon"
+          onClick={() => setOpenSidebar((prev) => !prev)}
+        />
         <img src={logo} alt="logo" className="logo-icon" />
       </div>
       <div className="nav-middle flex-div">

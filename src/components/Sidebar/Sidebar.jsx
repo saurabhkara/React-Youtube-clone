@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Sidebar.css";
 import home from "../../assets/home.png";
 import game_icon from "../../assets/game_icon.png";
@@ -14,9 +15,9 @@ import tom from "../../assets/tom.png";
 import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
-export default function Sidebar() {
+export default function Sidebar({ openSidebar }) {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${openSidebar ? "small-sidebar" : ""}`}>
       <div className="sidebar-inner">
         <div className="shortcut-link">
           <div className="side-link">
